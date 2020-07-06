@@ -9,13 +9,13 @@
       {{textBoxValue3}}
     </div>
     <div class="col-sm-6 card card-display">
-<cc-text-out-put :display-text="textBoxValue1">
+<cc-text-out-put :display-text="textBoxValue1" :containerHeight="130">
 
 </cc-text-out-put>
-      <cc-text-out-put :display-text="textBoxValue2">
+      <cc-text-out-put :display-text="textBoxValue2" :containerHeight="130">
 
       </cc-text-out-put >
-      <cc-text-out-put :display-text="textBoxValue3">
+      <cc-text-out-put :display-text="textBoxValue3" :containerHeight="130">
 
       </cc-text-out-put>
     </div>
@@ -43,7 +43,7 @@
 
 </script>
 
-<style scoped>
+<style>
   .edit-area {
     background-color: #d2f9f9;
     padding: 20px;
