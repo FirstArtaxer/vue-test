@@ -7,12 +7,11 @@
           <component v-bind:is="currentPage"></component>
         </keep-alive>
         <cc-footer>
-          <p class="text-center">&copy;Creative Cards</p>
+          <p class="text-center">{{appName}}</p>
           <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link">Home</a></li>
             <li class="nav-item"><a class="nav-link">About us</a></li>
             <li class="nav-item"><a class="nav-link">Contact us</a></li>
-
           </ul>
         </cc-footer>
       </div>
@@ -31,7 +30,8 @@ import Footer from "./components/Footer";
 export default {
   data: function(){
     return{
-      currentPage: 'cardFront'
+      currentPage: 'cardFront',
+      appName: 'Creative Cards'
     }
   },
   components:{
